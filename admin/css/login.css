@@ -1,0 +1,215 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c1810;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../../assets/img/bg-2.webp');
+    margin: 0;
+    /* padding: 20px; */
+    font-family: 'Times New Roman', serif;
+}
+
+.login-container {
+    width: 400px;
+    padding: 40px;
+    background:  url("../../assets/img/bg.webp") center/cover;
+    position: relative;
+    border: 8px solid #826f4a;
+    box-shadow: 0 0 20px rgba(44, 24, 16, 0.3);
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 24, 16, 0.8);
+}
+
+.shield-border {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 70px;
+    background: #f1ab1f;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shield-border::before {
+    content: '⚔️';
+    color: #d4b888;
+    font-size: 24px;
+}
+
+.corner-armor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #f1ab1f;
+    z-index: 2;
+}
+
+.armor-tl { 
+    top: -8px; 
+    left: -8px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.armor-tr { 
+    top: -8px; 
+    right: -8px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.armor-bl { 
+    bottom: -8px; 
+    left: -8px;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.armor-br { 
+    bottom: -8px; 
+    right: -8px;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    color: #d4b888;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+
+
+    font-family: "New Rocker", serif;
+/* font-family: "Bokor", serif; */
+/* font-family: "Blaka", serif; */
+/* font-family: "Ceviche One", serif; */
+/* font-family: "Sedgwick Ave Display", serif; */
+}
+
+
+.input-group {
+    width: 100%;
+    position: relative;
+}
+
+/* .input-group::before {
+    content: '🛡️';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+} */
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(130, 111, 74, 0.1);
+    border: 2px solid #826f4a;
+    color: #d4b888;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d4b888;
+    background: rgba(130, 111, 74, 0.2);
+}
+
+button {
+    background: #826f4a;
+    color: #2c1810;
+    border: 2px solid #d4b888;
+    padding: 15px 50px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+
+    /* font-family: "New Rocker", serif; */
+/* font-family: "Bokor", serif; */
+/* font-family: "Blaka", serif; */
+font-family: "Ceviche One", serif;
+/* font-family: "Sedgwick Ave Display", serif; */
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(212, 184, 136, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    background: #d4b888;
+    transform: scale(1.05);
+}
+
+.sword-divider {
+    width: 80%;
+    height: 2px;
+    background: #826f4a;
+    margin: 20px 0;
+    position: relative;
+}
+
+.sword-divider::before, .sword-divider::after {
+    content: '⚔️';
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sword-divider::before { left: -20px; }
+.sword-divider::after { right: -20px; }
+
+.battle-quote {
+    color: #826f4a;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

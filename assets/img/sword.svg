@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bladeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#a8a8a8"/>
+            <stop offset="45%" style="stop-color:#e8e8e8"/>
+            <stop offset="55%" style="stop-color:#ffffff"/>
+            <stop offset="100%" style="stop-color:#a8a8a8"/>
+        </linearGradient>
+        <linearGradient id="fullerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#8a8a8a"/>
+            <stop offset="50%" style="stop-color:#c0c0c0"/>
+            <stop offset="100%" style="stop-color:#8a8a8a"/>
+        </linearGradient>
+        <linearGradient id="guardGradient">
+            <stop offset="0%" style="stop-color:#b8860b"/>
+            <stop offset="50%" style="stop-color:#ffd700"/>
+            <stop offset="100%" style="stop-color:#b8860b"/>
+        </linearGradient>
+        <linearGradient id="handleGradient">
+            <stop offset="0%" style="stop-color:#654321"/>
+            <stop offset="50%" style="stop-color:#8b4513"/>
+            <stop offset="100%" style="stop-color:#654321"/>
+        </linearGradient>
+    </defs>
+    
+    <path class="blade" d="M45 0L55 0L58 280L42 280L45 0Z" fill="url(#bladeGradient)"/>
+    
+    <path class="fuller" d="M48 10L52 10L53 270L47 270L48 10Z" fill="url(#fullerGradient)"/>
+    
+    <path class="guard" d="M15 280H85L90 290H10L15 280Z M20 290H80L85 300H15L20 290Z" fill="url(#guardGradient)"/>
+
+    <path class="handle" d="M35 300H65L67 360H33L35 300Z" fill="url(#handleGradient)"/>
+    <path class="handle-wrap" d="M36 305H64M36 315H64M36 325H64M36 335H64M36 345H64M36 355H64" stroke="#4a3925" stroke-width="1"/>
+
+    <circle class="guard" cx="50" cy="370" r="12" fill="url(#guardGradient)"/>
+    <path class="guard" d="M44 370L56 370L54 380H46L44 370Z" fill="url(#guardGradient)"/>
+</svg>

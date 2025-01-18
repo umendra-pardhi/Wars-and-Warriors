@@ -1,0 +1,104 @@
+      /* Sidebar Styles */
+      .sidebar {
+        width: 250px;
+        background: linear-gradient(to right, #2c1810, #372318);
+        border-right: 3px solid #826f4a;
+        padding: 2rem 0;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .sidebar-header {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 2px solid #826f4a;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar-title {
+        font-family: "New Rocker", serif;
+        font-size: 1.5rem;
+        color: #ffd700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-item {
+        padding: 1rem 1.5rem;
+        color: #e5ccaa;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.3s ease;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-item:hover {
+        background: rgba(130, 111, 74, 0.2);
+        color: #ffd700;
+    }
+
+    .nav-item.active {
+        background: rgba(130, 111, 74, 0.3);
+        border-left: 4px solid #ffd700;
+    }
+
+    .nav-item i {
+        font-size: 1.2rem;
+    }
+
+
+
+    @media (max-width: 768px) {
+        /* .sidebar {
+            width: 60px;
+        } */
+        .sidebar {
+        width: 100%;
+        background: linear-gradient(to right, #2c1810, #372318);
+        border: 0;
+        padding: 0;
+        position: fixed;
+        bottom:0;
+        height: 80px;
+        overflow-y: hidden;
+    }
+    nav{
+        display: flex;
+        flex-grow:1;
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .nav-item.active {
+        background: rgba(130, 111, 74, 0.3);
+        border-left:none;
+        border-top: 4px solid #ffd700;
+    }
+
+
+        .sidebar-title,
+        .nav-item span {
+            display: none;
+        }
+
+        .nav-item {
+padding:1.8rem;
+color: #e5ccaa;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+transition: all 0.3s ease;
+position: relative;
+cursor: pointer;
+width: 25%;
+}
+
+   
+    }
