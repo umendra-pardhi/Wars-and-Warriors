@@ -7,18 +7,7 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 
-// Database Connection
-$db_hostname = "127.0.0.1";
-$db_username = "root";
-$db_password = "";
-$db_name = "wars_and_warriors";
-
-$conn = new mysqli($db_hostname, $db_username, $db_password, $db_name);
-
-if ($conn->connect_error) {
-    echo json_encode(["status" => "error", "message" => "Connection failed: " . $conn->connect_error]);
-    exit;
-}
+include('includes/connection.php');
 
 // Get the logged-in admin's email from session
 $adminEmail = $_SESSION['email'];
