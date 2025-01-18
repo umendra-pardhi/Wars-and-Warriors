@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 
-include('includes/connection.php');
+include('config/connection.php');
 
 // Get the logged-in admin's email from session
 $adminEmail = $_SESSION['email'];

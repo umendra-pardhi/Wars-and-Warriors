@@ -8,7 +8,7 @@ if(!isset($_SESSION['email'])){
 }
 
 
-include('includes/connection.php');
+include('config/connection.php');
 
 // Fetch all posts from the database
 $sql = "SELECT * FROM posts";

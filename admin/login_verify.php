@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header('Content-Type: application/json');
 
-include('includes/connection.php');
+include('config/connection.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login']) ) {
     $email = trim($_POST['email'] ?? '');

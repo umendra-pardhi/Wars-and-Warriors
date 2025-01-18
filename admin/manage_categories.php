@@ -5,7 +5,7 @@ if(!isset($_SESSION['email'])) {
     header("Location:login.php");
 }
 
-include('../includes/connection.php');
+include('../config/connection.php');
 
 // Handle Add Category
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['category_name'])) {

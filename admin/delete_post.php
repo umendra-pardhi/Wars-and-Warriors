@@ -1,5 +1,5 @@
 <?php
-include('includes/connection.php');
+include('config/connection.php');
 
 // Read the incoming request data
 $data = json_decode(file_get_contents('php://input'), true);

@@ -6,7 +6,7 @@ if(!isset($_SESSION['email'])){
     header("Location:login.php");
 }
 
-include('includes/connection.php');
+include('config/connection.php');
 
 // Check if post ID is provided in the URL
 if (isset($_GET['id'])) {

@@ -8,7 +8,7 @@
  }
 
 
-include('includes/connection.php');
+include('config/connection.php');
 
 $categoryResult = $conn->query("SELECT id, name FROM categories");
 
