@@ -9,6 +9,28 @@ Admin Panel: https://warsandwarriors.rf.gd/admin/
 
 ## Features
 
+### User Panel
+- **Categorized Content Access**
+  - Browse posts by specific categories
+  - Separate listing for different eras and warfare types posts
+  - Easy navigation between categories
+  - Clean and intuitive interface
+
+- **Interactive Loading Animation**
+  - Custom animated sword-clash loader
+  - Dynamic sparks and flash effects
+  - Smooth transitions between page loads
+  - Features traditional weapon designs
+  - Color-coordinated with historical theme
+  - Responsive scaling on all devices
+
+- **Responsive Design**
+  - Fully responsive layout for all devices
+  - Mobile-first approach
+  - Optimized reading experience on tablets and smartphones
+  - Adaptive images and media content
+  - Seamless navigation on all screen sizes
+
 ### Admin Panel
 
 - **Post Management**
